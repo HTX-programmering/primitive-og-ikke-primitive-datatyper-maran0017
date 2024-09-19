@@ -1,0 +1,69 @@
+OPG 2.1
+A - int
+minimum værdi er -2^31
+maximal værdi 2^31
+"int" Default size er 4 bytes og har en værdi på 0
+B - float
+float bruges til at gemme en værdi som er i decimaltal.
+Default value er 0.0f og har en size på 4 bytes.
+C - Character datatype
+Dens  funktion er god til at gemme "single value characters"
+Dens default værdi er \u0000 og dens maks værdi er \uffff, den har et size på 2 bytes.
+D - Boolean Datatype
+1 byte størrelse
+Sandt og falsk "true and false", default er falsk. Den gemmer flag values
+E - Byte Datatype
+Består af 8 bit, har en værdi fra -128 til 127, Den er meget kompakt fordi den er mindre end int, og den kan faktisk erstatte det, men den har ikke ligeså stor af en rækkeviddelse
+F - Short datatype
+Minder om integer datatypen, men den er 2 gange mindre. Den har en maks værdi på 32767 og en minimum på -32768, den har en størrelse på 2 bytes
+G - Long Datatype
+Bruges i store numre data (tænk solen stor :o ), det er en 64 bit integer og har en range fra -2^63 til +(2^63)-1
+H - Double Datatype
+Lidt ligesom float, men den har en fordel og det er at den har two bit precision, frem fra float med kun 1
+Range er fra -2^31 to (2^31)-1.
+
+OPG 2.2
+
+
+void setup() {
+  println("Primitive datatyper: Min og Maks værdier");
+
+  // Integer
+  println("Integer:");
+  println("Min: " + Integer.MIN_VALUE);
+  println("Max: " + Integer.MAX_VALUE);
+  
+  // Float
+  println("Float:");
+  println("Min: " + Float.MIN_VALUE);
+  println("Max: " + Float.MAX_VALUE);
+
+  // Char
+  println("Char:");
+  println("Min: " + (int) Character.MIN_VALUE);
+  println("Max: " + (int) Character.MAX_VALUE);
+
+  // Boolean 
+  println("Boolean:");
+  println("Sandt/Falsk");
+
+  // Byte
+  println("Byte:");
+  println("Min: " + Byte.MIN_VALUE);
+  println("Max: " + Byte.MAX_VALUE);
+
+  // Short
+  println("Short:");
+  println("Min: " + Short.MIN_VALUE);
+  println("Max: " + Short.MAX_VALUE);
+
+  // Long
+  println("Long:");
+  println("Min: " + Long.MIN_VALUE);
+  println("Max: " + Long.MAX_VALUE);
+
+  // Double
+  println("Double:");
+  println("Min: " + Double.MIN_VALUE);
+  println("Max: " + Double.MAX_VALUE);
+}
