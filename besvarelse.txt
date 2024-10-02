@@ -59,7 +59,7 @@ void setup() {
 
   // Long
   println("Long:");
-  println("Min: " + Long.MIN_VALUE);
+  println("Min: " + Lo
   println("Max: " + Long.MAX_VALUE);
 
   // Double
@@ -67,3 +67,24 @@ void setup() {
   println("Min: " + Double.MIN_VALUE);
   println("Max: " + Double.MAX_VALUE);
 }
+
+Jeg har fået hjælp at GPT 4o- til min kodning.
+OPG 2.3
+Altså baseret på hvad kvadratroden af 2 ganget med kvadratroden kan jeg da regne ud det skulle meget gerne give 2 igen? Men eftersom opgaven siger vi skal lave noget sjovt fis så gør jeg det
+
+// Først laver jeg den funktion med float
+  float f= sqrt(2);
+  println("Float sqrt(2): " + f);
+
+// Derefter laver jeg en funktion med double
+  double d = Math.sqrt(2);
+  println("Double Math.sqrt(2): " + d);
+
+// I sidste opgave lærte vi jo at en float og double funktion er næsten det samme
+// Forskellen ligger i at double har "two bit precision"
+  double result = d * d;
+  println("Resultat (Math.sqrt(2) * Math.sqrt(2)): " + result);
+  // Printer Resultatet, hvis man kigger under kan man se at Double funktionen, er meget mere præcis med kommatal.
+
+Til den her kode, der har jeg brugt GPT 4o-, til min double float værdi fordi der jeg kiggede på hvad regnestykket gav, så gav det 1.9999999 følgt af random tal, og fordi jeg har ocd skulle det være mindst 2. fejlen lå i jeg ikke brugte math.sqrt tror jeg, idk.
+  
